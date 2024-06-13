@@ -1,0 +1,1011 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 15px;
+}
+
+/* responsive for mobiles */
+@media (max-width:576px) {
+    body {
+        width: 100%;
+        overflow-x: hidden; 
+    }
+    
+}
+
+.page {
+    width: 100%;
+}
+
+.page .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+}
+
+.menu i {
+    display: none;
+}
+
+
+.page .nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px 10px 0px 0px;
+    background-color: rgba(233, 175, 194, 0.4);
+}
+
+.nav ul {
+    list-style-type: none;
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: rgb(58, 56, 56);
+}
+
+.icon {
+    display: flex;
+    width: 22%;
+    justify-content: space-evenly;
+    margin-left: 4%;
+}
+
+.icon i {
+    font-size: 20px;
+}
+.icon i:hover {
+    cursor: pointer;
+}
+
+.home {
+    width: 100%;
+    height: 80%;
+    border-radius: 0px 0px 20px 20px;
+    text-align: left;
+    display: flex;
+    background-color: rgb(231, 140, 171);
+    padding: 90px;
+}
+
+.home .left {
+    width: 60%;
+    padding: 15px;
+    margin-left: 6%;
+    margin-top: 8%;
+
+}
+
+.home .right {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.home .left h1 {
+    font-family: Verdana;
+    color: white;
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.home .left p {
+    margin-top: 5px;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.home .left button {
+    margin-top: 10px;
+    border: none;
+    color: white;
+    background-color: rgb(216, 23, 88);
+    padding: 10px 30px;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.home .left button:hover {
+    cursor: pointer;
+    border: 1px solid rgb(216, 23, 88);
+    background-color: rgb(231, 140, 171);
+    color: rgb(216, 23, 88);
+}
+/* responsive for desktop */
+@media (max-width:1200px) {
+    .home .right img {
+        width: 350px;
+        height: 720px;
+        
+    }
+    .home .left {
+        padding: 0px;
+        margin-top: 150px;
+        margin-left: 0px;
+    }
+    
+}
+
+/* responsive for tab screen */
+
+@media (max-width:900px) {
+    .page .nav {
+        display: none;
+    }
+
+    .page .menu {
+        padding: 30px;
+    }
+
+    .menu i {
+        display: block;
+    }
+
+    .page .menu {
+        position: relative;
+    }
+
+    .menu h1 {
+        position: absolute;
+        left: 0%;
+        font-size: 24px;
+    }
+
+    .menu i {
+        position: absolute;
+        right: 0%;
+        font-size: 24px;
+    }
+
+    .page .home {
+        width: 100%;
+        padding: 5px;
+    }
+
+    .home .left {
+        width: 60%;
+        padding: 0px;
+        margin-top: 7%;
+        padding-top: 90px;
+        margin-left: 80px;
+       
+        
+    }
+
+    .home .left h1 {
+        font-size: 2.5rem;
+    }
+
+    .home .left p {
+        font-size: 1rem;
+    }
+
+    .home .right {
+        width: 40%;
+    }
+
+
+}
+
+/* responsive for mobile screen */
+@media (max-width:576px) {
+    .page {
+        width: 100%;
+    }
+
+    .page .home {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .home .left {
+        width: 100%;
+        padding: 30px;
+        margin-top: 70px;
+        margin-left: 10px;
+    }
+
+    .home .left h1 {
+        font-size: 2rem;
+        margin-top: 40px;
+    }
+
+    .home .left p {
+        font-size: 1rem;
+    }
+
+    .home .right {
+        margin-top: 60px;
+        width: 100%;
+        padding: 20px;
+    }
+    .home .right img {
+        width: 80%;
+        height: 450px;
+    }
+}
+
+/* second page for products */
+
+.page2 {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.page2 h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 30px;
+    font-family: "Poppins", sans-serif;
+}
+
+.page2 .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.page2 .btn button {
+    border: none;
+    color: white;
+    background-color: rgb(216, 23, 88);
+    padding: 10px 30px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+}
+
+.page2 .btn button:hover {
+    cursor: pointer;
+    border: 1px solid rgb(216, 23, 88);
+    background-color: white;
+    color: rgb(216, 23, 88);
+}
+
+.products {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 20px;
+    row-gap: 40px;
+    padding: 20px;
+
+
+}
+
+.products a {
+    text-decoration: none;
+    color: black;
+}
+
+.products .child {
+    width: 100%;
+    background-color: rgb(128, 128, 128, .2);
+
+
+}
+
+.child .head {
+    padding: 10px;
+}
+
+.child .head h4 {
+    background-color: white;
+    width: 26%;
+    padding: 12px;
+    border-radius: 30px;
+}
+
+.child .ph {
+    display: flex;
+    justify-content: center;
+}
+
+.child .line {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 20px 0px 20px;
+}
+
+.child .line .name p {
+    font-size: 1.2rem;
+    margin-top: 5%;
+}
+
+.child .line .price p {
+    font-size: 1.2rem;
+    margin-top: 5%;
+}
+
+.child .line .price p span {
+    color: rgb(216, 23, 88);
+}
+
+.page2 .btn {
+    margin-top: 6%;
+}
+
+/* responsive for desktop */
+@media (max-width:1200px) {
+    .child .head h4 {
+        width: 40%;
+    }
+}
+
+/* responsive for tab */
+@media (max-width:900px) {
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .page2 {
+        margin-top: 100px;
+    }
+
+    .page2 h2 {
+        padding: 15px;
+        font-size: 1.5rem;
+        margin-top: -50px;
+    }
+
+    .child .head h4 {
+        width: 18%;
+    }
+
+}
+
+/* responsive for mobiles */
+@media (max-width:576px) {
+    .page2 {
+        width: 100%;
+        margin-top: 120px;
+    }
+
+    .page2 h2 {
+        padding: 15px;
+        font-size: 1.3rem;
+        margin-top: -80px;
+    }
+
+    .products {
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .child .head h4 {
+        width: 28%;
+    }
+
+}
+
+/* third page for new arrivals */
+
+.page3 {
+    width: 100%;
+    background-color: skyblue;
+    margin-top: 30px;
+    display: flex;
+    border-radius: 10px;
+    height: 460px;
+
+    
+}
+
+.page3 .left {
+    width: 50%;
+    margin-left: 40px;
+}
+
+.page3 .left img {
+    width: 80%;
+    height: 88%;
+    margin-top: 55px;
+}
+
+.page3 .right {
+    width: 50%;
+    padding-top: 50px;
+}
+
+.page3 .right h1 {
+    color: white;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.page3 .right p {
+    color: white;
+    font-size: 1.3rem;
+    margin-top: 0px;
+}
+
+.page3 .right #btn1 {
+    border: none;
+    color: white;
+    background-color: rgb(12, 186, 255);
+    padding: 15px 40px;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.page3 .right #btn1:hover {
+    cursor: pointer;
+    color: rgb(12, 186, 255);
+    border: 1px solid rgb(12, 186, 255);
+    background-color: transparent;
+}
+
+.page3 .right #btn2 {
+    border: none;
+    color: black;
+    padding: 15px 40px;
+    font-size: 1rem;
+    margin-left: 10px;
+}
+
+.page3 .right #btn2:hover {
+    cursor: pointer;
+    color: white;
+    border: 1px solid white;
+    background-color: transparent;
+
+}
+
+/* responsive for Desktop */
+
+@media (max-width:1200px) {
+    .page3 {
+        width: 100%;
+        height: 610px;
+    }
+    .page3 .right {
+        padding: 40px;
+        margin-right: 60px;
+        margin-top: 90px;
+    }
+    .page3 .right p {
+        font-size: 2ch;
+        margin-top: 0px;
+    }
+    .page3 .right button {
+        margin-top: 0px;
+    }
+    .page3 .left img {
+        height: 470px;
+        margin-top: 139px;
+        width: 100%;
+        margin-left: 0px;
+    }
+    
+
+}
+
+/* responsive for tab */
+
+@media (max-width:900px) {
+    .page3 {
+        width: 100%;
+    }
+
+    .page3 .left img {
+        margin-top: 140px;
+    }
+    .page3 .right h1 {
+        font-size: 1.5rem;
+    }
+
+    .page3 .right p {
+        font-size: 1.2rem;
+    }
+
+    .page3 .right #btn1 {
+        padding: 10px 20px;
+    }
+
+    .page3 .right #btn2 {
+        padding: 10px 20px;
+    }
+
+}
+
+/* responsive for mobiles */
+
+@media (max-width:576px) {
+    .page3 {
+        flex-direction: column-reverse;
+        height: 800px;
+    }
+
+    .page3 .left {
+        width: 100%;
+        
+    }
+
+    .page3 .right {
+        width: 100%;
+        margin-top: 30px;
+        padding: 40px;
+    }
+    .page3 .right p {
+        font-size: 1rem;
+    }
+    .page3 .left  {
+        padding: 0px;
+        margin-left: 10px;
+    }
+    .page3 .left img {
+        margin-top: 20px;
+        padding: 0px;
+        height: 310px;
+        width: 90%;
+    }
+
+}
+
+/* fourth page */
+
+.page4 {
+    width: 100%;
+    text-align: center;
+}
+
+.page4 h2 {
+    font-size: 2.5rem;
+    padding: 40px;
+    margin-top: 30px;
+}
+
+.box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 30px;
+    column-gap: 20px;
+}
+
+.box .box1 {
+    padding: 10px;
+    background-color: rgba(231, 229, 229, 0.3);
+    width: 100%;
+    border-radius: 10px;
+}
+
+.box .box1 i {
+    color: blueviolet;
+    font-size: 1.8em;
+    border: 2px solid blueviolet;
+    padding: 15px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+.box .box1 h5 {
+    font-size: 1.5rem;
+    padding: 5px;
+}
+
+.box .box1 p {
+    font-size: 1.3rem;
+    padding: 10px 50px 60px 50px;
+}
+
+/* responsive for tab */
+
+@media (max-width:900px) {
+    .page4 {
+        width: 100%;
+    }
+
+    .box {
+        grid-template-columns: 32% 32% 32%;
+        padding: 20px;
+    }
+
+    .box .box1 {
+        padding: 0px;
+    }
+
+}
+
+/* responsive for mobiles */
+
+@media (max-width:576px) {
+    .page4 {
+        width: 100%;
+    }
+    .page4 h2 {
+        font-size: 1.8rem;
+    }
+    .box {
+        grid-template-columns: 1fr;
+    }
+
+    .box .box1 {
+        margin-top: 20px;
+    }
+    .box .box1 i {
+        margin-top: 50px;
+    }
+
+}
+
+.page5 {
+    width: 100%;
+    height: 530px;
+    background-color: rgb(130, 11, 228);
+    border-radius: 20px;
+    display: flex;
+}
+
+.page5 .left {
+    width: 45%;
+}
+
+.page5 .left img {
+    padding: 30px;
+    margin-left: 30px;
+}
+
+.page5 .right {
+    width: 55%;
+    padding: 10px;
+    color: white;
+    margin-top: 70px;
+}
+
+.page5 .right h1 {
+    font-size: 2.5rem;
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+
+.page5 .right p {
+    font-size: 1.4rem;
+    margin-top: 10px;
+}
+
+.page5 .right #btn1 {
+    color: black;
+    border: none;
+    background-color: white;
+    padding: 15px 40px;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.page5 .right #btn1:hover {
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+.page5 .right #btn2 {
+    color: white;
+    border: none;
+    background-color: rgb(151, 79, 209);
+    padding: 15px 40px;
+    font-size: 1rem;
+    margin-left: 10px;
+}
+
+.page5 .right #btn2:hover {
+    cursor: pointer;
+    background-color: transparent;
+    color: rgb(169, 98, 236);
+    border: 1px solid rgb(169, 98, 236);
+}
+
+/* responsive for desktop */
+@media (max-width:1200px) {
+    .page5 {
+        width: 100%;
+        height: 520px;
+    }
+
+    .page5 .left {
+        width: 45%;
+    }
+
+    .page5 .right {
+        width: 55%;
+        padding: 10px;
+        margin-left: 30px;
+    }
+    .page5 .right h1 {
+        font-size: 2rem;
+    }
+    .page5 .right p {
+        font-size: 2ch;
+        margin-top: 0px;
+    }
+
+
+}
+
+/* responsive for tab */
+@media (max-width:900px) {
+    .page5 {
+        width: 100%;
+    }
+
+    .page5 .left {
+        width: 30%;
+        padding: 0px;
+    }
+    .page5 .left img {
+        width: 330px;
+        height: 350px;
+    }
+
+    .page5 .right {
+        width: 70%;
+        padding: 20px;
+        margin-left: 100px;
+        margin-top: 30px;
+    }
+    .page5 .right h1 {
+        font-size: 1.9rem;
+    }
+    .page5 .right p {
+        font-size: 1.1rem;
+    }
+    .page5 .right #btn1 {
+        font-size: 0.9rem;
+        padding: 10px 30px;
+    }
+    .page5 .right #btn2 {
+        font-size: 0.9rem;
+        padding: 10px 30px;
+    }
+}
+
+/* responsive for mobiles */
+@media (max-width:576px) {
+    .page5 {
+        flex-direction: column;
+        height: 900px;
+    }
+    .page5 .left {
+        width: 100%;
+    }
+    .page5 .left img {
+        width: 80%;
+        height: 380px;
+    }
+    .page5 .right {
+        width: 100%;
+        padding: 30px;
+        margin-left: 10px;
+    }
+    .page5 .right  h1 {
+        font-size: 1.8rem;
+    }
+    .page5 .right  p {
+        font-size: 1rem;
+    }
+    
+}
+
+.page6 {
+    width: 100%;
+    padding: 50px;
+}
+.page6 h1 {
+    text-align: start;
+    padding: 0px 5px 30px 5px;
+    font-family: sans-serif;
+}
+.page6 .box {
+    width: 100%;
+    display: flex;
+    padding: 30px;
+    box-shadow: 2px 3px 7px 7px rgb(163, 159, 159);
+}
+.page6 .box .left {
+    width: 55%;
+}
+.page6 .box .right {
+    width: 35%;
+    padding: 10px;
+}
+.page6 .box .right input {
+    padding: 20px;
+    margin-top: 20px;
+    width: 100%;
+}
+.page6 .box .right #msg {
+    height: 150px;
+}
+.page6 .box .right button {
+    border: none;
+    color: white;
+    background-color: rgb(224, 48, 107);
+    padding: 15px 40px;
+    margin-top: 40px;
+    margin-left: 30%;
+}
+/* responsive for tab */
+@media (max-width:900px) {
+    .page6 .box .right button {
+        margin-left: 25%;
+    }
+    
+}
+/* responsive for mobiles */
+@media (max-width:576px) {
+    .page6 {
+        padding: 20px;
+    }
+    .page6 .box{
+        width: 100%;
+        padding: 20px;
+        flex-direction: column;
+    }
+    .page6 .box .left {
+        width: 100%;
+        height: 300px;
+    }
+    .page6 .box .right {
+        width: 100%;
+        padding: 0px;
+    }
+    .page6 .box .right button {
+        margin-left: 30%;
+    }
+
+}
+
+.page7 {
+    width: 100%;
+    padding: 0px 95px;
+}
+.page7 h1 {
+    text-align: center;
+    padding: 20px 0px;
+}
+.page7 .caro {
+    padding: 30px;
+    box-shadow: 2px 3px 7px 7px rgb(163, 159, 159);
+}
+.page7 .caro h4 {
+    color: rgb(224, 48, 107);
+    font-weight: bold;
+}
+.page7 .caro h5 {
+    color: gray;
+}
+.page7 .caro p {
+    font-weight: 600;
+}
+
+/* responsive for mobiles */
+
+@media (max-width:576px) {
+    .page7 {
+        padding: 15px;
+    }
+}
+
+/* footer */
+.footer {
+    width: 100%;
+    background-color: rgb(24, 24, 24);
+    margin-top: 40px;
+    color: white;
+}
+.footer .line1  {
+    display: flex;
+    color: white;
+    justify-content: center;
+    padding: 80px 20px;
+}
+.footer .line1 i {
+    padding: 10px;
+    font-size: 1.5rem;
+}
+.footer .line2 {
+    display: flex;
+    padding: 10px;
+    margin-left: 35px;
+}
+.footer .line2 .box1 {
+    width: 22%;
+    padding: 10px;
+}
+.footer .line2 .box2 {
+    width: 28%;
+    padding: 8px;
+    border-bottom: 2px solid white;
+}
+
+.footer .line2 .box3 {
+    width: 25%;
+    padding: 8px;
+    border-bottom: 2px solid white;
+}
+
+.footer .line2 .box4 {
+    width: 25%;
+    padding: 8px;
+}
+.footer .line3 {
+    padding: 20px;
+    text-align: center;
+    font-size: 1.1rem;
+}
+.footer .line2 .box1 h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.footer .line2 .box2 h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.footer .line2 .box3 h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.footer .line2 .box4 h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.footer .line2 .box2 input {
+    padding: 5px;
+}
+.footer .line2 .box2 button{
+    border: none;
+    color: white;
+    background-color: palevioletred;
+    padding: 10px 30px;
+    margin-top: 20px;
+}
+
+/* respoisive for mobiles */
+@media (max-width:576px) {
+    .footer .line2 {
+        flex-direction: column;
+        margin-left: 0px;
+    }
+    .footer .line2 .box1 {
+        width: 100%;
+        text-align: center;
+    }
+    .footer .line2 .box2 {
+        width: 100%;
+        border-bottom: none;
+        text-align: center;
+    }
+    .footer .line2 .box3 {
+        width: 100%;
+        border-bottom: none;
+        text-align: center;
+    }
+    .footer .line2 .box4 {
+        width: 100%;
+        border-bottom: 2px solid white;
+        text-align: center;
+    }
+
+}
+
+
